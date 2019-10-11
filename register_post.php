@@ -8,11 +8,11 @@
     $req = $bdd->prepare('INSERT INTO member (firstName, lastName, email, password, repeat_password, created_at) 
     VALUES (:firstName, :lastName, :email, :password, :repeat_password, NOW() )');
     $req->execute(array(
-        'firstName' => $_POST['firstName'], 
-        'lastName' => $_POST['lastName'], 
-        'email' => $_POST['email'], 
-        'password' => $_POST['password'], 
-        'repeat_password' => $_POST['repeat_password']
+        'firstName' => htmlentities($_POST['firstName']), 
+        'lastName' => htmlentities($_POST['lastName']), 
+        'email' => htmlentities($_POST['email']), 
+        'password' => htmlentities($_POST['password']), 
+        'repeat_password' => htmlentities($_POST['repeat_password'])
         ));
    header('Location: index.php'); 
 ?>
