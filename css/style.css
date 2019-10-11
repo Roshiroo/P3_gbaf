@@ -1,0 +1,87 @@
+body {
+    margin: 0px auto;
+    width: 1024px;
+    height: 1024px;
+}
+#logoGBAF {
+    width: 15%;
+    height: 15%;
+}
+#identiter {
+    float: right;
+}
+#sectionPresentation {
+    display: flex;
+    justify-content: center;
+}
+#blocActeur1 {
+    border: 2px solid black;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+}
+#logoActeur1 {
+    width: 35%;
+    height: 35%;
+}
+#blocActeur2 {
+    border: 2px solid black;
+    margin: 15px 0 0 0;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+}
+#logoActeur2 {
+    width: 35%;
+    height: 35%;
+}
+#blocActeur3 {
+    border: 2px solid black;
+    margin: 15px 0 0 0;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+}
+#logoActeur3 {
+    width: 35%;
+    height: 35%;
+}
+#blocActeur4 {
+    border: 2px solid black;
+    margin: 15px 0 0 0;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+}
+#logoActeur4 {
+    width: 35%;
+    height: 35%;
+}
+.boutonSuite:nth-child(3) {
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px black;
+    padding: 5px;
+    align-self: flex-end;
+    margin: 0 0 0 20px;
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+}
+.boutonSuite:hover {
+    background: white;
+    color: red;
+    border-color: red;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+}
+.texteActeur {
+    font-size: 75%;
+    text-align: justify;
+    width: 50%;
+    margin: 0 0 0 20px;
+}
+#section2 {
+    border: 2px solid black;
+    padding: 10px;
+}
