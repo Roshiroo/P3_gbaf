@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="partenaire.php" method="POST" >
-            <label for="identifiant"> Identifiant : </label> <input type="text" name="identifiant" id="identifiant" placeholder="L'identifiant" /> <br>
-            <label for="password"> Mot de Passe : </label> <input type="password" name="password" id="password" placeholder="Mot de Passe" /> <br> 
+        <form action="connexion_post" method="POST" >
+            <label for="email"> Adresse email : </label> <input type="text" name="email" id="email" placeholder="Email" autofocus required /> <br>
+            <label for="password"> Mot de Passe : </label> <input type="password" name="password" id="password" placeholder="Mot de Passe" autofocus required/> <br> 
             <input type="submit" value="Se Connecter" /> 
         </form>
         <a href="register.php"> Se crée un compte</a>
