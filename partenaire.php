@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="public/css/style.css" />
         <title> Extranet groupe bancaire - Projet 3 OpenClassRoom Formation web</title>
     </head>
     <body>
