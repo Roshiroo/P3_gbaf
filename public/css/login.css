@@ -1,0 +1,21 @@
+body {
+    margin: 0px auto;
+    width: 1024px;
+    height: 1024px;
+}
+.conteneur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+.BlocOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 50%;
+    width: 50%;
+    background-color: brown;
+}

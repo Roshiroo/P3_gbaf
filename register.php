@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="public/css/register.css">
         <title> Inscription </title>
     </head>
     <body>
