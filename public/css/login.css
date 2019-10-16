@@ -1,21 +1,57 @@
-body {
+body, html {
     margin: 0px auto;
-    width: 1024px;
-    height: 1024px;
+    height: 100%;
+    background-color: orange; /* changer les couleurs */
 }
 .conteneur {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    height: 70%;
+    height: 80%;
 }
 .BlocOne {
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
-    height: 50%;
-    width: 50%;
-    background-color: brown;
+    border-radius: 3px;
+    box-shadow: 6px 6px 6px black;
+    height: 60%;
+    width: 20%;
+}
+.loginEmail, .loginPassword  {
+    font-size: 18px;
+    color: black;
+    width: 65%;
+    border-radius: 5px;
+    padding: 5px 45px 5px 50px;
+    background: whitesmoke;
+    display: block;
+}
+.loginEmail:focus , .loginPassword:focus {
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+    color:coral;
+    
+}
+.loginButton {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+.registerLink-01 {
+    color: gray;
+}
+.registerLink-02 {
+    color: gray;
+}
+.registerLink-02:hover {
+    color:cyan; /* changer les couleurs */
+}
+.titleLogin {
+    font-size: 50px;
+    margin: 0 0 50px 0;
 }
