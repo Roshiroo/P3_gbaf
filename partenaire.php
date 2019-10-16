@@ -7,7 +7,7 @@
     </head>
     <body>
         <header>
-                <img src="img/LogoGBAF.png" id="logoGBAF"  alt="Logo du groupe bancaire GBAF"/>
+                <img src="public/img/LogoGBAF.png" id="logoGBAF"  alt="Logo du groupe bancaire GBAF"/>
             
                 <a href="" id="identiter"> <p>Nom&prénom</p> </a>
         </header>
@@ -24,14 +24,14 @@
             </div> <!--titre partenaire end-->
             <div id="section2">
             <div id="blocActeur1">
-                 <img id="logoActeur1" src="img/formation_co.png" alt="Logo du groupe formation&co"/>
+                 <img id="logoActeur1" src="public/img/formation_co.png" alt="Logo du groupe formation&co"/>
                        <div class="texteActeur"><h3> Formation&co est une association française présente sur tout le territoire. <br/>
                             Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit et un accompagnement professionnel et personnalisé.
                             <br/> Notre proposition : </h3> </div>
                             <a class="boutonSuite" href=""> Lire la suite </a> 
             </div> <!--fin bloc1-->
             <div id="blocActeur2">
-                <img id="logoActeur2" src="img/protectpeople.png" alt="logo du groupe protectpeople" />
+                <img id="logoActeur2" src="public/img/protectpeople.png" alt="logo du groupe protectpeople" />
                 <h3 class="texteActeur" >
                             Protectpeople finance la solidarité nationale.
                             Nous appliquons le principe édifié par la Sécurité sociale française en 1945 : permettre à chacun de bénéficier d’une protection sociale.
@@ -42,7 +42,7 @@
                     <a class="boutonSuite" href=""> Lire la suite </a>
             </div> <!--fin bloc2-->
             <div id="blocActeur3">
-                <img id="logoActeur3" src="img/Dsa_france.png" alt="Logo du groupe Dsa France">
+                <img id="logoActeur3" src="public/img/Dsa_france.png" alt="Logo du groupe Dsa France">
                 <h3 class="texteActeur" >
                         Dsa France accélère la croissance du territoire et s’engage avec les collectivités territoriales.
                         Nous accompagnons les entreprises dans les étapes clés de leur évolution.
@@ -52,7 +52,7 @@
                     <a class="boutonSuite" href=""> Lire la suite </a>
             </div> <!--Fin bloc3 -->
             <div id="blocActeur4">
-                <img id="logoActeur4" src="img/CDE.png" alt="Logo du groupe CDE alias Chambre des Entrepreneurs " />
+                <img id="logoActeur4" src="public/img/CDE.png" alt="Logo du groupe CDE alias Chambre des Entrepreneurs " />
                 <h3 class="texteActeur">
                             La CDE (Chambre Des Entrepreneurs) accompagne les entreprises dans leurs démarches de formation. 
                             Son président est élu pour 3 ans par ses pairs, chefs d’entreprises et présidents des CDE.

@@ -6,18 +6,20 @@
         <title> Inscription </title>
     </head>
     <body>
+    <div class="conteneur">
+        <div class="element01">
+            <div class="registerTitle">
+                <span> Inscription au site GBAF </span>
+            </div>
         <form action="register_post.php" method="POST"> 
-            <label for="firstName"> Prénom : </label>
-                <input type="text" name="firstName" autofocus required><br>
-            <label for="lastName">Nom : </label>
-                <input type="text" name="lastName" autofocus required><br>
-            <label for="email"> Adresse email : </label> 
-                <input type="email" name="email" autofocus required><br>
-            <label for="passeword">Mot de Passe :</label> 
-                <input type="password" name="password" autofocus required><br>
-            <label for="repeat_password"> Répetez votre mot de passe : </label>
-                <input type="password" name="repeat_password" autofocus required/> <br>
-                <input type="submit" value="Crée son compte" />
+                <input class="input01" type="text" name="firstName" placeholder="Prénom" autofocus required><br>
+                <input class="input01" type="text" name="lastName" placeholder="Nom" autofocus required><br>
+                <input class="input01" type="email" name="email" placeholder="Adresse email" autofocus required><br>
+                <input class="input01" type="password" name="password" placeholder="Mot de passe" autofocus required><br>
+                <input class="input01" type="password" name="repeat_password" placeholder="Confirmer le mot de passe" autofocus required/> <br>
+                <button class="buttonRegister" href="partenaire.php" > Valider et s'inscrire</button>
         </form>
+        </div> <!-- element01 -->
+    </div> <!-- conteneur end -->
     </body>
 </html>
