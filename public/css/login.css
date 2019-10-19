@@ -1,14 +1,16 @@
-body, html {
+body {
     margin: 0px auto;
     height: 100%;
-    background: linear-gradient(white, crimson);
+    background-image: url(../../public/img/fond.svg);
+    background-position: 50% 100%;
 }
 .conteneur {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 80%;
+    height: 800px;
+    
 }
 .BlocOne {
     background-color: whitesmoke;
@@ -16,17 +18,17 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 60px;
     box-shadow: 6px 6px 6px black;
-    height: 60%;
-    width: 20%;
+    height: 400px;
+    width: 350px;
 }
 .loginEmail, .loginPassword  {
     font-size: 18px;
     color: black;
-    width: 65%;
+    width: 250px;
+    height: 40px;
     border-radius: 5px;
-    padding: 5px 45px 5px 50px;
     background: whitesmoke;
     display: block;
 }
