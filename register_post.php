@@ -1,16 +1,32 @@
 <?php
-if  (isset($_POST['firstName']) AND isset($_POST['lastName']) AND isset($_POST['email']) AND isset($_POST['password'])) //semble avoir un soucis mais n'est pas complétement ignorer (remarquer grace au retrait de repeat_password)
+if (isset($_POST['submit'])) 
 {
-    if ($_POST ['password'] != $_POST['repeat_password']) 
+    if (!empty($_POST['firstName']) AND !empty($_POST['lastName']) AND !empty($_POST['email']) AND !empty($_POST['password']))
     {
-        echo 'Wrong password';
-        echo   ' <p> <a href="register.php"> recommencer </a> </p>';
-    }
-        else
+        if (strlen($_POST['password']) >= 6 ) 
         {
-            $_POST['password'] = md5($_POST['password']);
-            require ('model/connect_bd.php');
-            require ('model/insert_bd.php');
-    header('Location: index.php');
+            if ($_POST ['password'] == $_POST['repeat_password'])
+            {
+                $_POST['password'] = md5($_POST['password']);
+                    require ('model/connect_bd.php');
+                    require ('model/insert_bd.php');
+            header('Location: index.php');
+            }
+                else
+                {
+                    echo 'Les mots de passes ne sont pas identiques !';
+                echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
+                }
+        }
+            else 
+            {
+            echo 'Votre mots de passe est trop petit';
+            echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
+            }
     }
+        else 
+        {
+        echo 'La totaliter des champs ne sont pas remplis';
+        echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
+        }    
 }

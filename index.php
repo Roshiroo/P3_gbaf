@@ -1,27 +1,2 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <title> Connexion </title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="public/css/login.css">
-    </head>
-    <body>
-    <div class="conteneur">
-        
-        <div class="BlocOne">
-            <div class="titleLogin">
-            <span> Connexion </span>
-        </div>
-            <form action="connexion_post" method="POST" >
-                    <input class="loginEmail" type="text" name="email" id="email" placeholder="Email" autofocus required /> <br>
-                    <input class="loginPassword" type="password" name="password" id="password" placeholder="Mot de Passe" autofocus required/> <br> 
-                    <button class="loginButton" href="partenaire.php" > Se connecter </button> 
-            </form>
-        <div class="registerLink">
-          <span class="registerLink-01"> Pas encore de compte ?   </span>
-          <a class="registerLink-02" href="register.php"> Se créer un compte</a>
-        </div>
-    </div>
-    </div>
-    </body>
-</html>
+<?php
+require ('view/login_view.php');
