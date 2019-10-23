@@ -49,3 +49,9 @@ body {
     font-size: 25px;
     margin: 0 0 50px 0;
 }
+.login_link01 , .login_link02 {
+    color: gray;
+} 
+.login_link02:hover {
+    color: cyan;
+}

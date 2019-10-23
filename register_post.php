@@ -10,23 +10,24 @@ if (isset($_POST['submit']))
                 $_POST['password'] = md5($_POST['password']);
                     require ('model/connect_bd.php');
                     require ('model/insert_bd.php');
-            header('Location: index.php');
+                header('Location: index.php');
             }
                 else
                 {
                     echo 'Les mots de passes ne sont pas identiques !';
-                echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
+                    echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
                 }
         }
             else 
             {
-            echo 'Votre mots de passe est trop petit';
-            echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
+                echo 'Votre mots de passe est trop petit';
+                echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
             }
     }
         else 
         {
-        echo 'La totaliter des champs ne sont pas remplis';
-        echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
-        }    
+            echo 'La totaliter des champs ne sont pas remplis';
+            echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
+        }
 }
+// NOTE : Rajouter les vérifications si : déjà un compte / email déjà use / contenu des champs.  s'orienter vers les regex ou boucle while
