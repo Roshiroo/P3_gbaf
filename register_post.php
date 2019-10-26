@@ -1,4 +1,5 @@
 <?php
+        require ('model/insert_bd.php');
 if (isset($_POST['submit'])) 
 {
     if (!empty($_POST['firstName']) AND !empty($_POST['lastName']) AND !empty($_POST['email']) AND !empty($_POST['password']))
@@ -8,8 +9,7 @@ if (isset($_POST['submit']))
             if ($_POST ['password'] == $_POST['repeat_password'])
             {
                 $_POST['password'] = md5($_POST['password']);
-                    require ('model/connect_bd.php');
-                    require ('model/insert_bd.php');
+                $req = insert();
                 header('Location: index.php');
             }
                 else
