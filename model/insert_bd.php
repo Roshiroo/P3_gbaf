@@ -1,5 +1,5 @@
 <?php
-function insert($firstName, $lastName, $email, $password)  
+function insert ($firstName, $lastName, $email, $password)  
 {   
     require ('connect_bd.php');
     try 

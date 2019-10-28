@@ -13,8 +13,8 @@
             <span> Connexion </span>
         </div>
             <form action="connexion_post" method="POST" >
-                    <input class="loginEmail" type="text" name="email" id="email" placeholder="Email" autofocus required /> <br>
-                    <input class="loginPassword" type="password" name="password" id="password" placeholder="Mot de Passe" autofocus required/> <br> 
+                    <input class="loginEmail" type="text" name="email" id="email" placeholder="Email"  /> <br>
+                    <input class="loginPassword" type="password" name="password" id="password" placeholder="Mot de Passe" /> <br> 
                     <button class="loginButton" href="view/partenaire.php" > Se connecter </button> 
             </form>
         <div class="registerLink">
