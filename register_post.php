@@ -21,7 +21,7 @@ if (isset($_POST['submit']) AND !empty($_POST['firstName']) AND !empty($_POST['l
             }
                 else
                 {
-                    echo 'Les mots de passes ne sont pas identiques !'; //changer la phrase
+                    echo 'Il semble y avoir une erreur'; //changer la phrase
                     echo   ' <p> <a href="view/register_view.php"> recommencer </a> </p>';
                 }
 // NOTE : Rajouter les vérifications si : déjà un compte / email déjà use / contenu des champs.  s'orienter vers les regex ou boucle while
