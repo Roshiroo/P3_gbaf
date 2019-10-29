@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +10,7 @@
         <header>
                 <img src="../public/img/LogoGBAF.png" id="logoGBAF"  alt="Logo du groupe bancaire GBAF"/>
             
-                <a href="" id="identiter"> <p>Nom&prénom</p> </a>
+                <a href="../destroy.php" id="identiter"> Déconnexion </a>
         </header>
             <div id="sectionPresentation"> 
         <section>
