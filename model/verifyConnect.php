@@ -1,7 +1,7 @@
 <?php
 function verifyConnect($email, $password) 
 {
-    require ('model/connect_bd.php');
+    require ('connect_bd.php');
     try 
     {
     $bdd = connect();

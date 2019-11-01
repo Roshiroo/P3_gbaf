@@ -11,7 +11,7 @@
             <div class="registerTitle">
                 <span> Inscription au site GBAF </span>
             </div>
-        <form action="../register_post.php" method="POST"> 
+        <form action="../controller/register_post.php" method="POST"> 
                 <input class="input01" type="text" name="firstName" placeholder="Prénom" autofocus required ><br>
                 <input class="input01" type="text" name="lastName" placeholder="Nom"  autofocus required ><br>
                 <input class="input01" type="email" name="email" placeholder="Adresse email"  autofocus required ><br>

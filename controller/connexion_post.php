@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-    require ('verifyConnect.php');
+    require ('../model/verifyConnect.php');
     if (isset($_POST['submit']) AND !empty($_POST['email']) AND !empty($_POST['password']))
     {
         
@@ -12,12 +12,12 @@ session_start();
             
             $user = $req->fetch();
             $_SESSION['user'] = $user;
-            header('Location: view/partenaire_view.php');
+            header('Location: ../view/partenaire_view.php');
         }
         else 
         {
             echo 'Mot de passe ou email incorrect';
-            echo   ' <p> <a href="index.php"> recommencer </a> </p>';
+            echo   ' <p> <a href="../index.php"> recommencer </a> </p>';
         }
     }
     else 
