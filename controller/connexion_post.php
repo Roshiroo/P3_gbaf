@@ -1,5 +1,4 @@
 <?php
-session_start(); 
     require ('../model/verifyConnect.php');
     if (isset($_POST['submit']) AND !empty($_POST['email']) AND !empty($_POST['password']))
     {
@@ -9,8 +8,9 @@ session_start();
         $req = verifyConnect($email, $password);
         if ($req -> rowCount() == 1 ) //si mdp en double dans la bdd , ne connecte pas
         {
-            
+            session_start();
             $user = $req->fetch();
+            
             $_SESSION['user'] = $user;
             header('Location: ../view/partenaire_view.php');
         }
