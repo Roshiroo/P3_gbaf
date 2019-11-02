@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-require ('../verifySession.php')
+require ('../verifySession.php') 
 ?>
 <!DOCTYPE html>
 <html>
