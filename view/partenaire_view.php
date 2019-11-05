@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-require ('../verifySession.php') 
+require ('../verifySession.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,12 +12,15 @@ require ('../verifySession.php')
     <body>
         <header>
                 <img src="../public/img/LogoGBAF.png" id="logoGBAF"  alt="Logo du groupe bancaire GBAF"/>
-            
-                <a href="../destroy.php" id="identiter"> Déconnexion </a>
+                 <!-- AFFICHER NOM PRENOM VIA SESSION ? -->
+               <div class="menu">
+                <a href= "../profil.php" id="member"> Profil  </a>
+                <a href="../destroy.php" id="identiter"> Se Déconnecter </a> 
+               </div>
         </header>
             <div id="sectionPresentation"> 
         <section>
-            <h1> Texte présentation du GBAF et du site </h1>
+            <h1> Bienvenu sur l'extranet </h1>
                 <p><strong> ILLUSTRATION</strong></p>
         </section>
             </div> <!--presentation end-->
