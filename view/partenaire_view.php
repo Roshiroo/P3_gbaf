@@ -14,7 +14,7 @@ require ('../verifySession.php');
                 <img src="../public/img/LogoGBAF.png" id="logoGBAF"  alt="Logo du groupe bancaire GBAF"/>
                  <!-- AFFICHER NOM PRENOM VIA SESSION ? -->
                <div class="menu">
-                <a href= "../profil.php" id="member"> Profil  </a>
+                <a href= "profil_view.php" id="member"> Profil  </a>
                 <a href="../destroy.php" id="identiter"> Se Déconnecter </a> 
                </div>
         </header>

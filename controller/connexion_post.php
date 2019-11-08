@@ -12,6 +12,7 @@
             $user = $req->fetch();
             
             $_SESSION['user'] = $user;
+            
             header('Location: ../view/partenaire_view.php');
         }
         else 
