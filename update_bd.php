@@ -2,15 +2,16 @@
 session_start();
 require ('model/connect_bd.php');
 
-if (!isset($_SESSION['user']))
+if (empty($_SESSION['user']))
 {
     header('Location: index.php');
 }
-
-        if($_SESSION['user']['firstName']) 
+ 
+        if (isset($_POST['firstName'])) 
         {
-            $firstName = $_SESSION['user'][1];
             $firstName = htmlspecialchars($_POST['firstName']);
+            echo $firstName;
+            die();
             if(strlen($firstName) <= 255)
             {
                 $bdd = connect();

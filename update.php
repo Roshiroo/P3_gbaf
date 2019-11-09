@@ -21,9 +21,9 @@ if (!isset($_SESSION['user']))
             <p> Prénom : <input type="text" name="firstName" Value="<?= $_SESSION['user']['firstName']; ?>" /> </p>
             <p> Nom : <input type="text" name="lastName" Value="<?= $_SESSION['user']['lastName']; ?>" /> </p>
             <p> Adresse email : <input type="text" name="email" Value="<?= $_SESSION['user']['email']; ?>" /> </p>
-            <p> Nouveau mot de passe : <input type="password" name="nouveau mot de passe"  /> </p>
-            <p> Confirmer nouveau mot de passe : <input type="repeat_password" name="confirmer nouveau mot de passe" /> </p>
-            <p> <a href="update_bd.php" name="update_confirm" > Modifier les informations </a> </p>
+            <p> Nouveau mot de passe : <input type="password" name="password"  /> </p>
+            <p> Confirmer nouveau mot de passe : <input type="repeat_password" name="repeat_password" /> </p>
+            <button type="submit"> Modifier les informations </button>
         </form>
             
     </body>
