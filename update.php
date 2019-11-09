@@ -17,28 +17,14 @@ if (!isset($_SESSION['user']))
             <h1> Modification des informations </h1>
         <div>
         <div>
-            <table>
-                <tr>
-                    <td> Prénom : </td>
-                    <td> <input type="text" name="firstName" Value="<?= $_SESSION['user']['firstName']; ?>" /> </td>
-                </tr>
-                <tr>
-                    <td> Nom : </td>
-                    <td> <input type="text" name="lastName" Value="<?= $_SESSION['user']['lastName']; ?>" /> </td>
-                </tr>
-                <tr>
-                    <td> Email : </td>
-                    <td> <input type="text" name="email" Value="<?= $_SESSION['user']['email']; ?>" /> </td>
-                </tr>
-                <tr>
-                    <td> Nouveau Mot de passe : </td>
-                    <td> <input type="password" name="nouveau mot de passe"  /> </td>
-                </tr>
-                <tr>
-                    <td> Confirmation du nouveau mot de passe : </td>
-                    <td> <input type="repeat_password" name="confirmer nouveau mot de passe" /> </td>
-                </tr>
-            </table>
-            <a href="update_bd.php" name="update_confirm" > Modifier les informations </a>
+        <form action="update_bd.php" method="POST">
+            <p> Prénom : <input type="text" name="firstName" Value="<?= $_SESSION['user']['firstName']; ?>" /> </p>
+            <p> Nom : <input type="text" name="lastName" Value="<?= $_SESSION['user']['lastName']; ?>" /> </p>
+            <p> Adresse email : <input type="text" name="email" Value="<?= $_SESSION['user']['email']; ?>" /> </p>
+            <p> Nouveau mot de passe : <input type="password" name="nouveau mot de passe"  /> </p>
+            <p> Confirmer nouveau mot de passe : <input type="repeat_password" name="confirmer nouveau mot de passe" /> </p>
+            <p> <a href="update_bd.php" name="update_confirm" > Modifier les informations </a> </p>
+        </form>
+            
     </body>
 </html>
